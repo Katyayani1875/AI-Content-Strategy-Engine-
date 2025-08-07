@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+celery
+redis
+python-dotenv
+motor  
+pytrends
+praw
