@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "composite": true, // <-- ADDED: This is required by the main tsconfig.
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true, // <-- RECOMMENDED: Add this for better compatibility.
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    // "noEmit": true, // <-- REMOVED/COMMENTED OUT: This was causing an error.
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["vite.config.ts"]
+}
